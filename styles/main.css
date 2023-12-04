@@ -10,7 +10,7 @@
 body {
     color: #FFFFFF;
 
-    background-image: linear-gradient(to bottom right, #0a0a0a, #27272E);
+    background-image: linear-gradient(to bottom right, #0a0a0a, #242436);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #000000;
@@ -49,11 +49,43 @@ main {
 }
 
 .navigation {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+
     text-align: center;
 }
 
 .navigation > * {
     padding: 0 1rem;
+}
+
+.dropdown-content {
+    display: none;
+
+    background-color: #00000080;
+    width: 100px;
+
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+
+    border-radius: 1rem;
+
+    left: 0;
+    right: 20px;
+
+    position: fixed;
+}
+
+.dropdown-content > * {
+    margin: 1rem 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+
+    flex-direction: column;
 }
 
 .featured {
